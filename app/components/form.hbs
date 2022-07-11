@@ -1,0 +1,11 @@
+<form class="mt-5" {{on 'submit' this.buttonClickValu}}>
+
+    <label class="name mb-2">Enter Your Name</label><br>
+
+    <input class="mb-5 px-4" id="name" /><br>
+
+    <p class="text-danger">{{this.error}}</p> {{!----error message section --}}
+
+    <button {{on "click" this.buttonClickValu}} type="button" class="mt-5 button">Start Game</button>
+
+</form>

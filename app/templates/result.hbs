@@ -1,0 +1,27 @@
+{{page-title "Result"}}
+<div class="container">
+    <div class="card-sec2 mb-2" id="quiz-area">
+
+        <div class="m-auto text-center">
+
+            <div class="mb-4">
+                <h1 class="mb-3">QUIZ</h1>
+                <h6>Completed</h6>
+            </div>
+
+            <div class=" mb-5 p-4 quiz-finish">
+
+                <h2>Your Score is </h2>
+                <h1><span id="score">{{this.score}}</span> /
+                    {{this.totalMarks}}</h1>
+
+            </div>
+
+            <button type="button" {{on 'click' this.playagainButton}} class="pre"> <i
+                    class="fa-solid fa-arrow-rotate-left"></i> Play Again</button>
+            <button type="button" {{on 'click' this.exitFunction}} class="pre">Exit</button>
+
+        </div>
+
+    </div>
+</div>
